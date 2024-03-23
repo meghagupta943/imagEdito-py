@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom styles here */
+        body {
+            background-color: #f2f2f2; /* light grey background */
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+            background-color: #ffffff; /* white background */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* slight shadow */
+        }
+
+        .contact-form h2 {
+            color: #333333; /* dark grey heading */
+        }
+
+        .contact-form label {
+            color: #666666; /* medium grey label */
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            background-color: #f9f9f9; /* light grey input fields */
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+
+        .contact-form textarea {
+            resize: vertical; /* allow vertical resizing of textarea */
+        }
+
+        .contact-form button[type="submit"] {
+            background-color: #4c4c4c; /* dark grey button */
+            color: #ffffff; /* white text */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button[type="submit"]:hover {
+            background-color: #333333; /* slightly darker grey on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-5 mb-4">Contact Us</h2>
+        <div class="contact-form">
+            <form >
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
